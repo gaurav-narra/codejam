@@ -18,6 +18,11 @@ echo "#!/usr/bin/ruby -w
 input  = File.new('inputs/input_$2.txt', 'r')
 output = File.new('outputs/output_$2.txt', 'wb')
 
+n = input.gets.to_i
+(1..n).to_a.each do |i|
+	output.puts 'Case #'+ i +': '+ #function
+end
+
 " >> "$1/question_$2.rb"
 
 
